@@ -1,9 +1,11 @@
 const router = require("express").Router();
-const pool = require('../db')
+const pool = require('../../db')
 const bcrypt = require("bcrypt");
 const jwtGenerator = require("../utils/jwtGenerator");
+const validInfo = require("../middleware/validInfo");
+const authorization = require("../middleware/authorization");
 
-router.post("/register", async (req, res) => {
+router.post("/register", validInfo, async (req, res) => {
   try {
     //req.body(name, email, password)
 
@@ -21,6 +23,8 @@ router.post("/register", async (req, res) => {
     const salt = await bcrypt.genSalt(10);
     const bcryptPassword = await bcrypt.hash(password, salt);
 
+    // inserindo usuário no banco de dados
+
     let newUser = await pool.query(
       "INSERT INTO users (name, email, password) VALUES ($1, $2, $3) RETURNING *",
       [name, email, bcryptPassword]
@@ -37,7 +41,7 @@ router.post("/register", async (req, res) => {
   }
 });
 
-router.post("/login", async (req, res) => {
+router.post("/login",validInfo, async (req, res) => {
     const { email, password } = req.body;
   
     try {
@@ -64,5 +68,15 @@ router.post("/login", async (req, res) => {
       res.status(500).send("Server error");
     }
   });
+
+  router.get("/is-verify", authorization, async (req, res) => {
+    try {
+      res.json(true)
+    } catch (err) {
+      console.log(err);
+        console.error(err.message);
+        res.status(500).send("Server error");
+    }
+  })
 
 module.exports = router;
