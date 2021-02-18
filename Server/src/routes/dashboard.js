@@ -2,13 +2,13 @@ const router = require("express").Router();
 const pool = require("../../db");
 const authorization = require("../middleware/authorization");
 
-router.post("/", authorization, async (req, res) => {
+router.get("/", authorization, async (req, res) => {
   try {
 
     // res.json(req.user)
     const user = await pool.query(
       "SELECT name FROM users WHERE id = $1",
-      [req.user]
+      [req.user.id]
     );
 
     // if would be req.user if you change your payload to this:

@@ -1,4 +1,4 @@
-.container {
+.container-register {
   width: 100vw;
   height: 100vh;
   /* background: #6C7A89; */
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.form {
+.form-register {
   display: flex;
   background: #fff;
   box-shadow: 10px -10px 5px rgba(15, 28, 51, 0.17);
@@ -19,7 +19,7 @@
   justify-content: center;
 }
 
-.form img {
+.form-register img {
   height: 350px;
   width: 500px;
   display: flex;
@@ -30,13 +30,13 @@
   margin-left: 5px;
 }
 
-.form h1 {
+.form-register h1 {
   display: flex;
   /* flex-direction: column; */
   background: #fff;
 }
 
-.form-control {
+.form-control-register {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,14 +46,14 @@
   margin-left: 40px;
 }
 
-.form-control input {
+.form-control-register input {
   width: 360px;
   margin: 10px;
   height: 30px;
   background: #fff;
 }
 
-.inputs {
+.inputs-register {
   position: relative;
   width: 100%;
   z-index: 1;
@@ -62,7 +62,7 @@
   background: #fff;
 }
 
-.inputs input {
+.inputs-register input {
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
@@ -88,7 +88,7 @@ input:focus {
   border: 1px solid #f50057;
 }
 
-.btn {
+.btn-register {
   font-size: 15px;
   line-height: 1.5;
   color: rgb(51, 51, 83);
@@ -103,7 +103,7 @@ input:focus {
   transition: all 0.4s;
 }
 
-.btn:hover {
+.btn-register:hover {
   background: rgb(51, 51, 83);
   color: #fff;
 }
@@ -116,7 +116,7 @@ input:focus {
 }
 
 @media only screen and (max-width: 1040px) {
-  .container {
+  .container-register {
     width: 100vw;
     height: 100vh;
     /* background: #6C7A89; */
@@ -126,7 +126,7 @@ input:focus {
     align-items: center;
   }
 
-  .form {
+  .form-register {
     display: flex;
     /* flex-direction: column; */
     background: #fff;
@@ -138,7 +138,7 @@ input:focus {
     justify-content: center;
   }
 
-  .form img {
+  .form-control-register img {
     height: 200px;
     width: 300px;
     display: flex;
@@ -151,7 +151,7 @@ input:focus {
 }
 
 @media screen and (max-width: 840px) {
-  .container {
+  .container-register {
     width: 100vw;
     height: 100vh;
     /* background: #6C7A89; */
@@ -162,7 +162,7 @@ input:focus {
     overflow: hidden;
   }
 
-  .form {
+  .form-register {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,7 +176,7 @@ input:focus {
     overflow: hidden;
   }
 
-  .form img {
+  .form-register img {
     height: 150px;
     width: 250px;
     display: flex;
@@ -189,7 +189,7 @@ input:focus {
     margin-bottom: 20px;
   }
 
-  .form h1 {
+  .form-register h1 {
     display: flex;
     /* flex-direction: column; */
     background: #fff;
@@ -197,7 +197,7 @@ input:focus {
     display: none;
   }
   
-  .form-control {
+  .form-control-register {
     /* display: flex; */
     flex-direction: column;
     /* justify-content: center; */
@@ -207,7 +207,7 @@ input:focus {
     /* margin-left: 40px; */
   }
   
-  .form-control input {
+  .form-control-register input {
     width: 250px;
     /* margin: 10px; */
     height: 20px;
@@ -215,7 +215,7 @@ input:focus {
     /* margin-top: 20px; */
   }
   
-  .inputs {
+  .inputs-register {
     position: relative;
     /* width: 100%; */
     /* z-index: 1; */
@@ -224,7 +224,7 @@ input:focus {
     background: #fff;
   }
   
-  .inputs input {
+  .inputs-register input {
     font-size: 15px;
     line-height: 1.5;
     color: #666666;
@@ -246,7 +246,7 @@ input:focus {
     color: rgb(51, 51, 83);
   }
 
-  .btn {
+  .btn-register {
     font-size: 15px;
     line-height: 1.5;
     color: rgb(51, 51, 83);
