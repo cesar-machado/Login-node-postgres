@@ -1,13 +1,20 @@
-import React from 'react'
-import './Login.css'
+import React from "react";
+import "./Login.css";
 
-function Login() {
-    return (
-        <div>
-            <h1>Login</h1>
-            
-        </div>
-    )
+function Login({ setAuth }) {
+  return (
+    <div>
+      <h1>Login</h1>
+      <button
+        onClick={() => {
+          setAuth(true);
+        }}
+      >
+        Log in
+      </button>
+      <form></form>
+    </div>
+  );
 }
 
-export default Login
+export default Login;
