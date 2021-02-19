@@ -8,7 +8,7 @@ router.get("/", authorization, async (req, res) => {
     // res.json(req.user)
     const user = await pool.query(
       "SELECT name FROM users WHERE id = $1",
-      [req.user.id]
+      [req.user]
     );
 
     // if would be req.user if you change your payload to this:
