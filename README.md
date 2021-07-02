@@ -10,7 +10,7 @@
 
 <h4 align="center"> Responsividade aplicada no projeto</h4>
 
-<div>
+<div align="center">
 <img src=".github/responsive.PNG" alt="tela responsiva">
 
 </div>
