@@ -21,7 +21,7 @@
 - [NodeJs](https://nodejs.org/)
 - [JWT](https://jwt.io/)
 
-### Requerimentos para que você veja o projeto.
+### Requisitos para que você veja o projeto.
 
 - Você Precisa instalar o [Node.js](https://nodejs.org/en/download/) e pode usar o Npm que já vem quando você instala o Nodejs.
 
