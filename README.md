@@ -65,4 +65,6 @@ mas para você ativar o servidor você vai na pasta server use:
 $ npm start
 ```
 
+O servidor estará disponível no seu navegador em http://localhost:4000
+
 Feito com muito 💜 by César Machado 👋 [Meu LinkedIn](https://www.linkedin.com/in/cesar-mach/)
