@@ -6,12 +6,12 @@
 
 <h4 align="center"> Tela de Cadastro</h4>
 
-<img src=".github/telaAuth.png" alt="tela de Cadastro">
+<img src=".github/telaAuth.PNG" alt="tela de Cadastro">
 
 <h4 align="center"> Responsividade aplicada no projeto</h4>
 
 <div>
-<img src=".github/responsive.png" alt="tela responsiva">
+<img src=".github/responsive.PNG" alt="tela responsiva">
 
 </div>
 
