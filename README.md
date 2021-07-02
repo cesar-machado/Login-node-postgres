@@ -4,9 +4,9 @@
   Esse é um app só para praticar back-end com node-Js, jwt e React para front-end.
 </h4>
 
-<h4 align="center"> Tela de Login</h4>
+<h4 align="center"> Tela de Cadastro</h4>
 
-<img src=".github/telaAuth.png" alt="tela do admin">
+<img src=".github/telaAuth.png" alt="tela de Cadastro">
 
 <h4 align="center"> Responsividade aplicada no projeto</h4>
 
@@ -28,25 +28,41 @@
 **Clone o projeto e entre na pasta**
 
 ```bash
-$ git clone https://github.com/cesar-machado/Login-node-postgres.git && cd react-login para acessar a pagina && cd server para acessar o servidor
+$ git clone https://github.com/cesar-machado/Login-node-postgres.git
 ```
 
-**Siga os passo abaixo para rodar o projeto**
+**Para entra na pasta do servidor use:**
 
 ```bash
-# Para instalar as dependências
+cd server
+```
+
+**Para entra na pasta do da página use:**
+
+```bash
+cd react-login
+```
+
+**Siga os passo abaixo para ativar o projeto**
+
+```bash
+# Para instalar as dependências. OBS: faça isso na pasta server e na pasta react-login
 $ npm Install
 
-# Remember to configure your .env.local following the .env.exemple
-
-# Run the web server
+# Para rodar o front-end na pasta react-login use:
 $ npm start
 ```
 
 O projeto estará disponível no seu navegador em `http://localhost:3000`
 
-Existe duas paginas nesse projeto que são:
+Existe duas paginas no react-login que são:
 `http://localhost:3000/login`
 `http://localhost:3000/register`
+
+mas para você ativar o servidor você vai na pasta server use:
+
+```bash
+$ npm start
+```
 
 Feito com muito 💜 by César Machado 👋 [Meu LinkedIn](https://www.linkedin.com/in/cesar-mach/)
