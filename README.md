@@ -43,7 +43,7 @@ cd server
 cd react-login
 ```
 
-**Siga os passo abaixo para ativar o projeto**
+**Siga os passos abaixo para ativar o projeto**
 
 ```bash
 # Para instalar as dependências. OBS: faça isso na pasta server e na pasta react-login
